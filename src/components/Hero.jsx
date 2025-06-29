@@ -16,7 +16,7 @@ const Hero = () => {
         <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white md:inline
         transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'><a href="https://www.linkedin.com/in/prashanth-nelluri-bb2b3827b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bn%2FeG6eNrRrqQpCy6ZMCkNQ%3D%3D" target="_blank">Contact with me</a></button>
         <button className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white md:inline
-        transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'><a href="https://drive.google.com/file/d/1PCcGznfWQA1D1VnbiYMwvzvNqevdBgP2/view?usp=sharing" target="_blank">Resume</a></button>
+        transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'><a href="https://drive.google.com/file/d/16KdfNW4fFBy7VRCtwtwcZHAtIdEPdLa7/view?usp=sharing" target="_blank">Resume</a></button>
       </div>
     </div>
   )
