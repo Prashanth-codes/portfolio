@@ -2,28 +2,58 @@ import React from 'react'
 import js from '../assets/javascript.png';
 import mern from '../assets/mern.png';
 import react from '../assets/react.png';
+import rk from '../assets/rk.png';
+import summarize from '../assets/summarize.png';
+import sentiment from '../assets/sentiment.png';
+import website from '../assets/website.png';
 
 const projects = [
     {
         id: 1,
         name: "Journey Story",
-        technologies: "mern",
+        technologies: "MERN Stack",
         image: mern,
-        github: "https://github.com/Prashanth-codes/Journey-Story.git"
-    },
+        github: "https://github.com/Prashanth-codes/Journey-Story.git",
+        website: "https://journey-story-client.onrender.com/login"
+    }, 
     {
         id: 2,
-        name: "Eduversity",
-        technologies: "react js",
-        image: react,
-        github: "https://prashanth-codes.github.io/Edu-versity/"
+        name: "RK Home Tuitions",
+        technologies: "MERN Stack",
+        image: rk,
+        github: "https://github.com/Prashanth-codes/tutor-client",
+        website: "https://tutor-client-prashanths-projects-694b131c.vercel.app/"
     },
     {
         id: 3,
-        name: "Journey Story",
-        technologies: "html css js",
-        image: js,
-        github: "https://prashanth-codes.github.io/Image_Editor/"
+        name: "Eduversity",
+        technologies: "ReactJS",
+        image: react,
+        github: "https://github.com/Prashanth-codes/Edu-versity",
+        website: "https://prashanth-codes.github.io/Edu-versity/"
+    },
+    {
+      id : 4,
+      name: "Ai summarizer",
+      technologies: "HTML, CSS, JavaScript",
+      image: summarize,
+      github: "https://github.com/Prashanth-codes/Ai-summarize-chrome-extension",
+    },
+    {
+      id: 5,
+      name: "Analyze view",
+      technologies: "ReactJS, ExpressJs",
+      image: sentiment,
+      github: "https://github.com/Prashanth-codes/sentiment-server",
+      website: "https://sentiment-client-delta.vercel.app/"
+    },
+    {
+      id: 6,
+      name: "Website Score",
+      technologies: "ReactJS, ExpressJs, MongoDB",
+      image: website,
+      github: "https://github.com/Prashanth-codes/website_score-server",
+      website: "https://wesbite-score.vercel.app/"
     }
 ]
 
@@ -41,8 +71,12 @@ const Projects = () => {
                         <img src={project.image} alt={project.name} className='rounded-lg mb-4 w-full h-48 object-cover'/>
                         <h3 className='text-2xl font-bold mb-2'>{project.name}</h3>
                         <p className='text-gray-400 mb-4'>{project.technologies}</p>
-                        <a href={project.github} className='inline-block bg-gradient-to-r
-                         from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Link</a>
+                        <div className='flex items-center space-x-4'>
+                          <a href={project.github} className='inline-block bg-gradient-to-r
+                          from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Source code</a>
+                          {project.website && <a href={project.website} className='inline-block bg-gradient-to-r
+                          from-green-400 to-blue-500 text-white px-4 py-2 rounded-full' target='_blank' rel='noopener noreferrer'>Website</a>}
+                         </div>
                     </div>
                 ))
             }
